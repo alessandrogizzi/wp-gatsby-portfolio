@@ -5,6 +5,7 @@ export default ({ pageContext }) => {
 	return (
 		<Layout>
 			<h1 dangerouslySetInnerHTML={{ __html: pageContext.title }} />
+			<div dangerouslySetInnerHTML={{ __html: pageContext.content }} />
 		</Layout>
 	)
 }
