@@ -36,7 +36,7 @@ exports.createPages = ({ graphql, actions }) => {
                 template
                 title
                 content
-                template
+								template
               }
             }
           }
