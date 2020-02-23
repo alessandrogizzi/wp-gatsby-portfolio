@@ -18,3 +18,11 @@ function create_custom_portfolio_post_type(){
 }
 
 add_action('init', 'create_custom_portfolio_post_type');
+
+add_action('save_post', 'netlify_build');
+
+// add correct link - build hook netlify
+function netlify_build()
+{
+	wp_remote_post('https://api.netlify.com/build_hooks/');
+}
